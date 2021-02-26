@@ -35,7 +35,7 @@ def main():
             socketCliente, direccion = socketServidor.accept()
             # Esperando petición de conexión de un cliente.
             
-            mensaje, direccion = socketCliente.recvfrom(4096)
+            mensaje = socketCliente.recv(4096)
             # Recibimos mensaje del cliente.
             
             print("Recibido mensaje: {} de: {}:{}".format(mensaje.decode('UTF-8'),direccion[0],direccion[1]))
