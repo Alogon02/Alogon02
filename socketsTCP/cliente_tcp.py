@@ -14,6 +14,7 @@ def main():
         print("Formato ClienteTCP <maquina> <puerto> <mensaje>")
         sys.exit()
         # Comprueba que solo tenemos 4 argumentos.
+        
     try:
         maquina = sys.argv[1]
         puerto =int(sys.argv[2])
