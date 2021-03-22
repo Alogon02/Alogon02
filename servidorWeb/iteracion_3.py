@@ -18,7 +18,7 @@ def head(mensaje):
     tamaño = str(os.path.getsize('data'+archivo))
     mod = datetime.datetime.fromtimestamp(os.path.getmtime('data'+archivo)).strftime("%a, %d %b %Y %H:%M:%S %Z")
     fecha = (datetime.datetime.now().strftime("%a, %d %b %Y %H:%M:%S %Z"))
-    server = ('Alfonso')
+    server = ('Apache')
     respuesta =('HTTP/1.0 200 OK\nContent-Length: {}\nLast-Modified: {}\nDate: {}\nServer: {}\n'.format(tamaño, mod, fecha, server)).encode()
    
     return respuesta
