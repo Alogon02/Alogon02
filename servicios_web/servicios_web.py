@@ -2,7 +2,7 @@
 """
 Created on Wed Apr 14 09:06:24 2021
 
-@author: Alogon
+@author: Alogo
 """
 from gmg import gmg
 import requests
